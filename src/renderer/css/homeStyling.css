@@ -1,0 +1,133 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 130%;
+    margin: 0 1rem;
+}
+
+.nav {
+    align-self: center;
+    
+}
+
+.nav_list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.nav_list_item {
+    padding: 1rem .5rem;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+.nav_list_item :hover {
+    color: blue;
+}  
+
+.nav_list_item :hover{
+    text-decoration: underline;
+    color: lightslategrey;
+}
+
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.search_input {
+    border-radius: 1rem;
+    border: .1rem black solid; 
+}
+
+.inhoudstafel {
+    padding: 1rem;
+}
+
+.title-small {
+    font-size: 3rem;
+    text-transform: capitalize;
+    
+    padding: 0 0 1rem;
+}
+
+.section {
+    padding: 3rem;
+}
+
+
+.subTitle{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.paragraph {
+    margin-bottom: 1rem;
+}
+
+.image{
+    padding: 0 2rem; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tekst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_more {
+    padding: 1rem;
+}
+
+.section_referenties{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.referentie_paragraph{
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+.referentie_title {
+    font-size: 2rem;
+}
+
+.footer_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.second_nav {
+    display: grid;
+    grid-template-columns: .5fr 2.5fr .7fr;
+    
+    grid-template-areas: 
+    'header nav search'
+}

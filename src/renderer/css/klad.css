@@ -1,0 +1,65 @@
+.layoutone{
+    display: grid;
+    grid-template-columns: .5fr 2.5fr .7fr;
+    grid-template-areas: 
+    'header nav search'
+    'inhoudstafel algemeen input'
+    'inhoudstafel state referenties'
+    'inhoudstafel algemeenvervolg referenties'
+    'inhoudstafel kleur referenties'
+    'inhoudstafel foto2 referenties'
+    'inhoudstafel kleurvervolg referenties'
+    'inhoudstafel more referenties'
+    'footer footer footer'
+    ;
+}
+
+.layouttwo{
+    display: grid;
+    grid-template-columns: .5fr 1.25fr 1.25fr .7fr;
+    grid-template-areas: 
+    'header         algemeen       algemeen          search'
+    'inhoudstafel   algemeen      algemeen           input'
+    'inhoudstafel   state          algemeenvervolg   algemeenvervolg'
+    'inhoudstafel   state          algemeenvervolg   algemeenvervolg'
+    'inhoudstafel   nav            nav               .'
+    'inhoudstafel   kleur          kleur             referenties'
+    'inhoudstafel   more           more              referenties'
+    'inhoudstafel   kleurvervolg   kleurvervolg      referenties'
+    'inhoudstafel   foto2          foto2             referenties'
+    'footer         footer         footer            footer';
+}
+
+.layouttree{
+    display: grid;
+    grid-template-columns: .5fr 1.25fr 1.25fr .7fr;
+    grid-template-areas: 
+    'inhoudstafel  algemeen       algemeen        algemeen'
+    'inhoudstafel  algemeen       algemeen        algemeen'
+    'inhoudstafel  search         algemeenvervolg algemeenvervolg'
+    'inhoudstafel  state          algemeenvervolg algemeenvervolg'
+    'inhoudstafel  nav            nav             input'
+    'inhoudstafel  header         header          .'
+    'inhoudstafel  kleur          kleur           kleur'
+    'inhoudstafel  more           more            referenties'
+    'inhoudstafel  kleurvervolg   kleurvervolg    referenties'
+    'inhoudstafel  footer         footer          footer'
+    'inhoudstafel  foto2          foto2           .';
+}
+
+
+.layoutfour{
+    display: grid;
+    grid-template-columns: .5fr 1.25fr 1.25fr .7fr;
+    grid-template-areas: 
+    'referenties    algemeen            algemeen            algemeen' 
+    'referenties    .                   search              inhoudstafel' 
+    'referenties    footer              footer              inhoudstafel'
+    'referenties    foto2               foto2               inhoudstafel'
+    'state          algemeenvervolg     algemeenvervolg     inhoudstafel'
+    'state          algemeenvervolg     algemeenvervolg     inhoudstafel'
+    'nav            nav                 input               inhoudstafel'
+    'header         header              .                   inhoudstafel'
+    'kleur          kleurvervolg        kleurvervolg        inhoudstafel'
+    'kleur          more                more                inhoudstafel'
+}

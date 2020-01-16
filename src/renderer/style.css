@@ -1,0 +1,24 @@
+@import './css/reset.css';
+@import './css/vars.css';
+@import './css/test.css';
+@import './css/gridsHome.css';
+@import './css/homeStyling.css';
+
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0 auto;
+  }
+  
+  /* stylelint-disable */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  /* stylelint-enable */
+
+

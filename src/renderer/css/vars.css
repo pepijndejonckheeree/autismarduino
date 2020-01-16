@@ -1,0 +1,7 @@
+:root {
+    --spaceSmall: 1rem;
+  }
+  
+  @custom-media --only-small-screen (width >= 360px);
+  @custom-media --only-medium-screen (width >= 900px);
+  

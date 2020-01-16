@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+.container{
+  background-color: blue;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  width: 99vw;
+  height: 100vh;
+  padding: 1rem;
+  
+}
+
+.container--layoutOne{
+  grid-template-areas: 
+  '. groen groen groen groen'
+  'rood . blauw  blauw blauw'
+  'rood . blauw  blauw blauw'
+  'rood . blauw2 blauw2 blauw2'
+  'rood . blauw2 blauw2 blauw2'
+  ;
+}
+
+.container--layoutTwo{
+  grid-template-areas: 
+  '. . . . .'
+  '. blauw blauw blauw rood'
+  'groen groen groen groen rood'
+  '. blauw2 blauw2 blauw2 rood'
+  '. blauw2 blauw2 blauw2 rood'
+  ;
+}
+
+.container--layoutTree{
+  grid-template-areas: 
+  '. . rood . .'
+  'groen . rood blauw blauw'
+  'groen . rood blauw blauw'
+  'groen . rood blauw2 blauw2'
+  'groen . rood blauw2 blauw2'
+  ;
+}
+
+.red {
+  grid-area: rood;
+  background-color: red;
+}
+
+.green {
+  grid-area: groen;
+  background-color: green;
+}
+
+.blue {
+  grid-area: blauw;
+  background-color: lightblue;
+}
+
+.blue2 {
+  grid-area: blauw2;
+  background-color: lightblue;
+}
+
+.tekst {
+  font-size: 5rem;
+  font-family: Helvetica, Arial, sans-serif;
+}

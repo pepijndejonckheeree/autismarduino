@@ -1,0 +1,165 @@
+.layoutone{
+    display: grid;
+    grid-template-columns: .5fr 2.5fr .7fr;
+    grid-template-areas: 
+    'header         nav               search'
+    'inhoudstafel   algemeen          input'
+    'inhoudstafel   state             .'
+    'inhoudstafel   algemeenvervolg   .'
+    'inhoudstafel   kleur             .'
+    'inhoudstafel   foto2             referenties'
+    'inhoudstafel   kleurvervolg      referenties'
+    'inhoudstafel   more              referenties'
+    'footer         footer            footer'
+    ;
+}
+
+.layouttwo{
+    display: grid;
+    grid-template-columns: .5fr 2.5fr .7fr;
+    grid-template-areas: 
+    'header             algemeen          search'
+    'inhoudstafel       algemeen          input'
+    'inhoudstafel       algemeen          input'
+    'inhoudstafel       nav               .'
+    'inhoudstafel       state             .'
+    'inhoudstafel       algemeenvervolg   .'
+    'inhoudstafel       kleur             .'
+    'inhoudstafel       kleurvervolg      foto2'
+    'inhoudstafel       referenties       .'
+    'inhoudstafel       referenties       more'
+    'footer             footer            footer';
+}
+
+.layouttree{
+    display: grid;
+    grid-template-columns: .5fr 2.5fr .7fr;
+    grid-template-areas: 
+    'header    algemeen          .'
+    'search    algemeen          input'
+    '.         algemeen          input'
+    '.         nav               inhoudstafel'
+    '.         state             inhoudstafel'
+    '.         algemeenvervolg   inhoudstafel'
+    '.         kleur             inhoudstafel'
+    '.         kleurvervolg      foto2'
+    '.         referenties       .'
+    '.         referenties       more'
+    'footer    footer            footer';
+}
+
+
+.layoutfour{
+    display: grid;
+    grid-template-columns: .5fr 1.25fr 1.25fr .7fr;
+    grid-template-areas: 
+    'referenties    algemeen            algemeen            algemeen' 
+    'referenties    .                   search              input' 
+    'referenties    footer              footer              input'
+    'referenties    foto2               foto2               inhoudstafel'
+    'state          algemeenvervolg     algemeenvervolg     inhoudstafel'
+    'state          algemeenvervolg     algemeenvervolg     inhoudstafel'
+    'nav            nav                 .                   inhoudstafel'
+    'header         header              .                   inhoudstafel'
+    'kleur          kleurvervolg        kleurvervolg        inhoudstafel'
+    'kleur          more                more                inhoudstafel'
+}
+
+.layoutfive{
+    display: grid;
+    grid-template-columns: .5fr 1.25fr 1.25fr .7fr;
+    
+    grid-template-areas: 
+    'referenties    kleur            kleur            kleur' 
+    'referenties    search              search              input' 
+    'referenties    footer              footer              input'
+    'referenties    nav                 .                   inhoudstafel'
+    '.              foto2               foto2               inhoudstafel'
+    'header         header              header              inhoudstafel'
+    'algemeen       kleurvervolg        kleurvervolg        kleurvervolg'
+    'algemeen       more                more                more'
+    'algemeen       algemeenvervolg     algemeenvervolg     algemeenvervolg'
+    'state          algemeenvervolg     algemeenvervolg     algemeenvervolg';
+}
+
+
+.header {
+    background-color: lightblue;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav {
+    background-color: lightblue;
+    grid-area: nav;
+}
+
+.search {
+    background-color: lightblue;
+    grid-area: search;
+}
+
+.search_input {
+    height: 2rem;
+    background-color: lightblue;
+    padding: .5rem
+}
+
+.inhoudstafel {
+    background-color: burlywood;
+    grid-area: inhoudstafel;
+}
+
+.section_algemeen {
+    background-color: lightsteelblue;
+    grid-area: algemeen;
+}
+
+.image_stat {
+    background-color: lightsteelblue;
+    grid-area: state;
+}
+
+.section_algemeen_vervolg{
+    background-color: lightsteelblue;
+    grid-area: algemeenvervolg;
+}
+
+.section_kleur-intro {
+    background-color: lightsteelblue;
+    grid-area: kleur;
+}
+
+.image_two {
+    background-color: lightsteelblue;
+    grid-area: foto2;
+}
+
+.tekst {
+    grid-area: input;
+}
+
+.section_kleur_vervolg {
+    background-color: lightsteelblue;
+    grid-area: kleurvervolg;
+}
+
+.section_more {
+    background-color: lightgoldenrodyellow;
+    grid-area: more;
+}
+
+.section_referenties{
+    background-color: lightgoldenrodyellow;
+    grid-area: referenties;
+    align-self: flex-end;
+}
+
+.footer_home {
+    background-color: lightblue;
+    grid-area: footer;
+}
+
+

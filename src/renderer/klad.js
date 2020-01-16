@@ -86,7 +86,7 @@ require('./style.css');
     const showValue = value =>{
       console.log(`value`,value);
       setBackgroundcolor(value);
-      changeLayOut(value);
+      (value);
     }
   
     })
@@ -95,32 +95,31 @@ require('./style.css');
 
   const changeLayOut = value => {
 
-    const $containerHome = document.querySelector(`.container_home`);
 
     if( value > 900){
       console.log(`> 900`);
-      $containerHome.classList.add(`layoutone`);
-      $containerHome.classList.remove(`layouttwo`, `layouttree`, `layoutfour`, `layoutfive`);
+      $container.classList.add(`container--layoutOne`);
+      $container.classList.remove(`container--layoutTree`, `container--layoutTwo`);
   
     }else if( 900 > value && value> 800){
       console.log(`900 - 800`);
-      $containerHome.classList.remove(`layoutone`, `layouttree`, `layoutfour`, `layoutfive`);
-      $containerHome.classList.add(`layouttwo`);
+      $container.classList.remove(`container--layoutOne`, `container--layoutTree`);
+      $container.classList.add(`container--layoutTwo`);
 
     }else if( 800 > value && value> 700){
       console.log(`800 - 700`);
-      $containerHome.classList.remove(`layoutone`,`layouttwo`, `layoutfour`, `layoutfive`);
-      $containerHome.classList.add(`layouttree`);
+      $container.classList.remove(`container--layoutOne`, `container--layoutTree`);
+      $container.classList.add(`container--layoutTwo`);
 
     }else if( 700 > value && value> 600){
       console.log(`700 - 600`);
-      $containerHome.classList.remove(`layoutone`, `layouttwo`, `layouttree`, `layoutfive`);
-      $containerHome.classList.add(`layoutfour`);
+      $container.classList.remove(`container--layoutOne`, `container--layoutTree`);
+      $container.classList.add(`container--layoutTwo`);
   
     }else if( 600 > value){
       console.log(`< 600`);
-      $containerHome.classList.remove(`layoutone`, `layouttwo`, `layouttree`, `layoutfour`);
-      $containerHome.classList.add(`layoutfive`);
+      $container.classList.remove(`container--layoutOne`, `container--layoutTwo`);
+      $container.classList.add(`container--layoutTree`);
   
     // add or remove multiple classes
     // div.classList.add("foo", "bar", "baz");
@@ -142,17 +141,17 @@ require('./style.css');
     $tekstDiv.textContent = value;
 
   if( value > 900){
-    // console.log(`> 900`);
+    console.log(`> 900`);
     $container.classList.add(`container--layoutOne`);
     $container.classList.remove(`container--layoutTree`, `container--layoutTwo`);
 
   }else if( 900 > value && value> 700){
-    // console.log(`900 - 700`);
+    console.log(`900 - 700`);
     $container.classList.remove(`container--layoutOne`, `container--layoutTree`);
     $container.classList.add(`container--layoutTwo`);
 
   }else if( 700 > value){
-    // console.log(`< 700`);
+    console.log(`< 700`);
     $container.classList.remove(`container--layoutOne`, `container--layoutTwo`);
     $container.classList.add(`container--layoutTree`);
 
